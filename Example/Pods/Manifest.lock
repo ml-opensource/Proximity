@@ -1,0 +1,16 @@
+PODS:
+  - Proximity (0.1.0)
+
+DEPENDENCIES:
+  - Proximity (from `../`)
+
+EXTERNAL SOURCES:
+  Proximity:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Proximity: 7c4e72c161b336d759707ad40822269337051857
+
+PODFILE CHECKSUM: 6425de0fcd287d2cacabd25ec1fe9bd4cecc89f4
+
+COCOAPODS: 1.6.1

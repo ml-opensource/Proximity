@@ -1,42 +1,25 @@
-#
-# Be sure to run `pod lib lint Proximity.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = 'Proximity'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of Proximity.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = 'Detect BLE devices in the immediate vicinity.'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Have you ever wanted Airpods-like nearby device notifications?
+
+Using RSSI values, Proximity detects BLE devices in the immediate vicinity. Very likely being held directly up to the BLE peripheral.
                        DESC
 
-  s.homepage         = 'https://github.com/Eric Kunz/Proximity'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/fuzz-productions/Proximity'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Eric Kunz' => 'ericjkunz@gmail.com' }
-  s.source           = { :git => 'https://github.com/Eric Kunz/Proximity.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/fuzz-productions/Proximity.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/ericjkunz'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
+  s.swift_version = '4.0'
 
   s.source_files = 'Proximity/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'Proximity' => ['Proximity/Assets/*.png']
-  # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'CoreBluetooth'
 end
