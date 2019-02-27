@@ -1,0 +1,6 @@
+framework module Pods_Proximity_Example {
+  umbrella header "Pods-Proximity_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
