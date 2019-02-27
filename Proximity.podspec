@@ -17,9 +17,11 @@ Using RSSI values, Proximity detects BLE devices in the immediate vicinity. Very
 
   s.ios.deployment_target = '10.0'
   s.swift_version = '4.0'
-
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
+  
   s.source_files = 'Proximity/Classes/**/*'
-
+  s.exclude_files = 'Proximity/**/*.plist'
+  
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'CoreBluetooth'
 end
