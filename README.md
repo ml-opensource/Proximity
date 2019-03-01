@@ -21,7 +21,7 @@ pod 'Proximity'
 
 ## Use Cases
 
-### Tap-to-book a conference room.
+### Tap-to-book a conference room
 iPads outside conference rooms could each advertise a different service (UUID). An iPhone monitoring for all of those services could know which conference room iPad it tapped based on the detected service of the peripheral. Then the iPhone could book a meeting knowinch which conference room the user is outside.
 
 ## Author
