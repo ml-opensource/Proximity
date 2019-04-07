@@ -42,3 +42,4 @@ Eric Kunz, ericjkunz@gmail.com, Fuzz Productions
 Proximity is available under the MIT license. See the LICENSE file for more info.
 
 "proximity" icon by Andrejis Kirma from thenounproject.com.
+"iPhone" icon by kakoki from thenounproject.com.
