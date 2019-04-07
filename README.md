@@ -5,7 +5,11 @@
 [![License](https://img.shields.io/cocoapods/l/Proximity.svg?style=flat)](https://cocoapods.org/pods/Proximity)
 [![Platform](https://img.shields.io/cocoapods/p/Proximity.svg?style=flat)](https://cocoapods.org/pods/Proximity)
 
-Proximity is a bluetooth library for detecting when a BLE device is held up to the host device.
+Proximity is a bluetooth library for detecting when a BLE device is held up to the host device. 
+
+It mimics the behavior of the AirPods connection/status sheet when holding open Airpods nearby an iPhone. It is also intended to be used in place of RFID.
+
+![proximity demo animation](images/proximity_animation_300.gif)
 
 ## Example
 
