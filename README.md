@@ -11,6 +11,11 @@ It mimics the behavior of the AirPods connection/status sheet when holding open 
 
 ![proximity demo animation](images/proximity_animation_300.gif)
 
+## How it Works
+Proximity continually monitors the signal strength of nearby BLE devices. This strength is referred to as the received signal strength indicator (RSSI). The RSSI is checked every time an advertising packet is received from nearby devices.
+
+The `Proximity.delegate` is notified when the RSSI of a nearby device meets a threshold. The default threshold is -40. This value was selected based on testing with iPhone Xs, iPhone Xr, iPhone SE, and iPad Pro 3rd generation to get a notification when within a couple inches. It may be overridden via the `Proximity.immediateVicinityThreshold`.
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
