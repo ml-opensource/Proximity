@@ -29,10 +29,11 @@ import Proximity
 
 class MyViewController: UIViewController {
 
+    let proximity = Proximity()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        private let proximity = Proximity()
+        
         proximity.delegate = self
         proximity.startScanning(forPeripheralsWithServices: ["CAE2...03C3"])
     }
