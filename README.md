@@ -1,3 +1,4 @@
+![proximity logo](images/logo_120.png)
 # Proximity
 
 [![Version](https://img.shields.io/cocoapods/v/Proximity.svg?style=flat)](https://cocoapods.org/pods/Proximity)
@@ -22,7 +23,7 @@ pod 'Proximity'
 ## Use Cases
 
 ### Tap-to-book a conference room
-iPads outside conference rooms could each advertise a different service (UUID). An iPhone monitoring for all of those services could know which conference room iPad it tapped based on the detected service of the peripheral. Then the iPhone could book a meeting knowinch which conference room the user is outside.
+iPads outside conference rooms could each advertise a different service (UUID). An iPhone monitoring for all of those services could know which conference room iPad it tapped based on the detected service of the peripheral. Then the iPhone could book a meeting at the particular room.
 
 ## Goals
 
@@ -35,3 +36,5 @@ Eric Kunz, ericjkunz@gmail.com, Fuzz Productions
 ## License
 
 Proximity is available under the MIT license. See the LICENSE file for more info.
+
+"proximity" icon by Andrejis Kirma from thenounproject.com.
