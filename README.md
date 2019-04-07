@@ -20,6 +20,42 @@ The `Proximity.delegate` is notified when the RSSI of a nearby device meets a th
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+## Usage
+
+### Quick Start
+
+```Swift
+import Proximity
+
+class MyViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        private let proximity = Proximity()
+        proximity.delegate = self
+        proximity.startScanning(forPeripheralsWithServices: ["CAE2...03C3"])
+    }
+
+}
+
+extension MyViewController: ProximityDelegate {
+
+    func proximityDidUpdateState(_ proximity: Proximity) {}
+    
+    func proximityDidUpdatePeripherals(_ proximity: Proximity) {}
+    
+    func proximityThresholdPassed(by peripheral: Peripheral) {
+        // peripheral is nearby
+    }    
+
+}
+
+```
+
+## Requirements
+
+
 ## Installation
 
 Proximity is available through [CocoaPods](https://cocoapods.org). To install
